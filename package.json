@@ -1,0 +1,30 @@
+{
+  "name": "retrowild",
+  "version": "1.0.0",
+  "description": "Project1 Wild Code School",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dr-wouse/retrowild.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dr-wouse/retrowild/issues"
+  },
+  "homepage": "https://github.com/Dr-wouse/retrowild#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "posthtml-include": "^1.7.1",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {}
+}

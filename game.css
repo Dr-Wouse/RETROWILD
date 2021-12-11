@@ -1,0 +1,133 @@
+* {
+  padding: 50%;
+  margin: 0px;
+}
+
+.bodyGame {
+  --background-img: '/assets/fond_body.png';
+  background-image: url('/assets/fond_body.png');
+}
+
+.h1Game {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-family: 'Gameplay', sans-serif;
+}
+
+
+
+#myCanvas {
+  background-color: #000000ec;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* TABLEAU */
+
+.h2Scoreboard {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: -7%;
+  font-family: 'Gameplay', sans-serif;
+  font-size: 35px; 
+
+}
+
+
+
+.parentScore {
+  background-color: #000000ec;
+  display: flex;
+  margin: 10%;
+  height: auto;
+}
+
+.medals {
+  font-size: 40px;
+}
+
+table {
+  font-family: 'Gameplay', sans-serif;
+  margin: auto;
+}
+th {
+  color: #eddd53;
+  font-size: 25px;
+}
+
+th,
+td {
+  padding: 50px;
+  text-align: center;
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+td {
+  color: aliceblue;
+  font-size: 20px; 
+}
+
+/*ANIMATION*/
+
+.box {
+  border-radius: 10px;
+  border: 10px dashed #eddd53;
+}
+
+/* SCOREBOARD */ 
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 1s;
+  animation-duration: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite ;
+}
+
+@-webkit-keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+/* DARK MODE */
+.dark {
+  background-image: url('assets/dark_fond_body.png');
+  color: #2a7b9b; 
+}
+
+.dark main {
+  background: #eddd53;
+}
+.dark .label {
+  box-shadow: 2px 1px 1px #eddd53;
+  background: #888;
+}
+.dark .ball {
+  background: #eddd53;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="home.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>RetroWild-Contact</title>
+</head>
+
+<body>
+
+  <section>
+		<div class="logo">
+		  <a class="logo" href="index.html"><img src="assets/rwLogo2.png" alt="logo" /></a>
+		</div>
+	  
+		<nav class="navigation">
+		  <div class="toggle">
+			<input type="checkbox" class="checkbox" id="dark-mode" />
+			<label for="dark-mode" class="label">
+			  <div class="ball"></div>
+			</label>
+		  </div>
+	  
+		  <nav class="navigationBar">
+			  <a href="index.html">Home</a>
+			  <a href="game.html">Game</a>
+			  <a href="about.html">About us</a>
+			  <a href="contact.html">Contact us</a>
+		  </nav>
+		</nav>
+	  
+		<div class="toggleBox">
+		  <a onclick="showMenu()" href="#">
+			<img class="menu" src="assets/burgerMenu.svg"/>
+			<img class="close" src="assets/closeBtn.svg"/>
+		  </a>
+		</div>
+	  </section>
+  
+
+  <form>
+    <div>
+      <img src="/assets/LETTRE.png" alt="icon" class="fadeInDown">
+    </div>
+
+    <label for="firstName">FIRST-NAME : </label>
+    <input type="text" placeholder="Enter your first name" id="firstName" name= "firstname" required>
+    
+    <label for="lastName">LAST-NAME : </label>
+    <input type="text" placeholder="Enter your last name" id="lastName" name= "firstname" required>
+
+    <label for="phone">PHONE-NUMBER : </label>
+    <input type="phone" placeholder="☎️ Enter your phone number" id="email" name= "email" required>
+  
+    <label for="email"> EMAIL : </label>
+    <input type="email" placeholder="✉️ Enter your email adress" id="email" name= "email" required>
+    
+    <label for = "commentary"> What do you mean ? </label>
+    <textarea placeholder="📄 Commentary" requiredid="commentary" name= "commentary" required></textarea>
+    
+    <input type="submit" value="Send">
+  </form>
+  <!--Top Button-->    
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><i class='fas fa-angle-double-up' style='font-size:24px;color:#eddd53'></i></i></button>
+
+ 
+  <div class=footer>
+    <a href="#"><img class="lnkdnLogo" src="assets/linkedin.svg"></a>
+    <p>© 2021 Copyright: WildCodeSchool/error500</p>
+    <a href="#"><img class="ghLogo" src="assets/github.svg"></a> 
+</div>
+
+<script>
+  function showMenu() {
+    document.querySelector('.navigation').classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('hide');
+    document.querySelector('.close').classList.toggle('show');
+    console.log(showMenu);
+  }
+</script>
+<script src="script.js"></script>
+</body>
+
+</html>
